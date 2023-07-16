@@ -2,17 +2,17 @@
 import React, {useState} from "react";
 import { HiX} from 'react-icons/hi'
 import { motion } from "framer-motion";
-//import { images } from "../constants";
+import { images } from "../constants";
 //import bg from '../public/bgWhite.png'
 
 const Navbar = () => {
-  const menuItems = ["home", "about", "work", "skills", "contact"]
+  const menuItems = ["home", "about", "contact"]
   const [toggel, setToggel] = useState(false);
   return (
     
     <nav className="w-full flex justify-between items-center  bg-white/20 fixed top-0 backdrop-blur-sm px-10 z-40 py-4">
       <div className="flex justify-center items-center  ">
-        {/*<img src={images.logo.src} alt="ksd" className="max-w-[150px] 2xl:max-w-[220px]" />*/}
+        <img src={images.logo.src} alt="ksd" className="max-w-[150px] 2xl:max-w-[220px]" />
       </div>
       <div className="hidden md:block ">
       <ul className="flex space-x-8 ">
