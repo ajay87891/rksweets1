@@ -2,9 +2,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 //import { images } from "../constants";
-//import bg from "../public/assets/bgIMG.png";
+import bg from "../public/assets/bg.png";
 //import {AppWrap} from "../wrapper";
 import Typewriter from "typewriter-effect";
+import Carousel from "@/components/carousel";
 
 const Header = () => {
   const scaleVariants = {
@@ -20,12 +21,12 @@ const Header = () => {
   
   return (
     <div
-      className="pt-32 bg-cover bg-repeat bg-center relative bg header flex items-center justify-center min-w-screen md:flex-row md:items-start flex-col min-h-screen"
+      className=" pt-24 lg:pt-32 bg-cover bg-repeat bg-center relative  flex items-center justify-start min-w-screen flex-col min-h-screen"
       style={{
-        /*backgroundImage: `url(${bg.src})`,
+        backgroundImage: `url(${bg.src})`,
         backgroundSize: "cover",
         backgroundRepeat: "repeat",
-        backgroundPosition: "center",*/
+        backgroundPosition: "center",
       }}
     >
       <motion.div
@@ -33,14 +34,14 @@ const Header = () => {
         transition={{ duration: 1 }}
         className=" header-info flex-[0.65] flex flex-col justify-start items-start h-full lg:w-full mr-0"
       >
-        <div className=" header-badge w-full flex justify-end items-end flex-col space-y-4">
-          <div className=" badge-cmp min-w-[230px] flex items-center justify-center  2xl:py-8 2xl:px-16 py-4 px-8 border-white shadow-[0px_0px_20px_rgba(0,0,0,0.1)] rounded-2xl">
+        <div className=" header-badge w-full flex justify-center items-center flex-col space-y-4">
+          <div className=" badge-cmp min-w-[230px] flex items-center justify-center  2xl:py-8 2xl:px-16 py-4 px-8 bg-primary/90 border-white shadow-[0px_0px_20px_rgba(0,0,0,0.1)] rounded-2xl">
             
             <div className="ml-5">
-              <p className=" text-gray-700 text-xl 2xl:text-2xl mb-2  text-left">
-                RK Sweets
+              <p className=" text-white text font-Shrikhand text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl mb-2  text-center">
+                R.K. Sweets & Bakers
               </p>
-              <span className=" text-gray-700 text-xl 2xl:text-2xl w-full uppercase text-right">
+              <span className=" text-white text-base md:text-xl lg:text-2xl 2xl:text-4xl w-full uppercase text-center">
               <Typewriter
                 options={{
                   strings: ["Bakery", "Dine-IN", "Banquet"],
@@ -56,6 +57,8 @@ const Header = () => {
           
         </div>
       </motion.div>
+      <Carousel></Carousel>
+      
       
       
     

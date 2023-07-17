@@ -17,6 +17,10 @@ module.exports = {
       
         'primary': '#582c4f',
       },
+      fontFamily: {
+        Shrikhand: ["Shrikhand", "cursive"],
+    
+       },
     },
     
   },

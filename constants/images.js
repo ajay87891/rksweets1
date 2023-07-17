@@ -1,2 +1,3 @@
 import logo from '@/public/assets/logo.png';
-export default {logo};
+import bg from '@/public/assets/bg.png'
+export default {logo,bg};

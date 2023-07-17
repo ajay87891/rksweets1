@@ -10,9 +10,9 @@ const Navbar = () => {
   const [toggel, setToggel] = useState(false);
   return (
     
-    <nav className="w-full flex justify-between items-center  bg-primary fixed top-0 backdrop-blur-sm px-10 z-40 py-4">
+    <nav className="w-full flex justify-between items-center  bg-primary fixed top-0 backdrop-blur-sm px-2 z-40 py-3 lg:py-4">
       <div className="flex justify-center items-center  ">
-        <img src={images.logo.src} alt="ksd" className="max-w-[100px] 2xl:max-w-[220px]" />
+        <img src={images.logo.src} alt="logo" className="max-w-[70px] 2xl:max-w-[120px]" />
       </div>
       <div className="hidden md:block ">
       <ul className="flex space-x-8 ">
