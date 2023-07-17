@@ -32,7 +32,7 @@ const Header = () => {
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 1 }}
-        className=" header-info  flex flex-col justify-start items-start h-full lg:w-full mr-0"
+        className=" header-info flex-[0.65] flex flex-col justify-start items-start h-full lg:w-full mr-0"
       >
         <div className=" header-badge w-full flex justify-center items-center flex-col space-y-4">
           <div className=" badge-cmp min-w-[230px] flex items-center justify-center  2xl:py-8 2xl:px-16 py-4 px-8 bg-primary/90 border-white shadow-[0px_0px_20px_rgba(0,0,0,0.1)] rounded-2xl">
@@ -57,10 +57,7 @@ const Header = () => {
           
         </div>
       </motion.div>
-      <div className="mt-8">
       <Carousel></Carousel>
-      </div>
-      
       
       
       
