@@ -6,11 +6,11 @@ import { images } from "../constants";
 //import bg from '../public/bgWhite.png'
 
 const Navbar = () => {
-  const menuItems = ["home", "about", "contact"]
+  const menuItems = ["Home", "Services","Menu","contact","About Us"]
   const [toggel, setToggel] = useState(false);
   return (
     
-    <nav className="w-full flex justify-between items-center  bg-primary fixed top-0 backdrop-blur-sm px-2 z-40 py-3 lg:py-4">
+    <nav className="w-full flex justify-between items-center  bg-primary/80 fixed top-0 backdrop-blur-sm px-2 z-40 py-3 lg:py-4">
       <div className="flex justify-center items-center  ">
         <img src={images.logo.src} alt="logo" className="max-w-[70px] 2xl:max-w-[120px]" />
       </div>
