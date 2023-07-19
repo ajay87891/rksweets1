@@ -15,7 +15,8 @@ import {
   Autoplay,
 } from "swiper/modules";
 
-const Carousel = () => {
+export default function Carousel(props)  {
+  
   const [slides, setSlides] = useState();
 
   useEffect(() => {
@@ -56,16 +57,13 @@ const Carousel = () => {
             {slides?.map((slide, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <a
-                    href="https://link.zomato.com/xqzv/rshare?id=17236117864b9edd"
-                    target="_blank"
-                  >
+                  <div onClick={()=>props.setopenModal('pop-up')}>
                     <img
                       src={urlFor(slide.imageurl)}
                       alt="slide_image"
                       className="w-72 h-72 object-cover rounded-xl"
                     />
-                  </a>
+                  </div>
                 </SwiperSlide>
               );
             })}
@@ -85,4 +83,4 @@ const Carousel = () => {
     </>
   );
 };
-export default Carousel;
+

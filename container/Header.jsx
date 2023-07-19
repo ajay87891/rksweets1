@@ -6,8 +6,12 @@ import bg from "../public/assets/bg.png";
 //import {AppWrap} from "../wrapper";
 import Typewriter from "typewriter-effect";
 import Carousel from "@/components/carousel";
+import PopUpModal from "@/components/modal";
+import { useState } from "react";
 
 const Header = () => {
+  const [openModal, setOpenModal] = useState();
+  
   const scaleVariants = {
     whileInView: {
       scale: [0, 1],
@@ -17,6 +21,9 @@ const Header = () => {
         ease: "easeInOut",
       },
     },
+  };
+  function modalcontrol(data){
+    setOpenModal(data);
   };
   
   return (
@@ -58,7 +65,8 @@ const Header = () => {
           
         </div>
       </motion.div>
-      <Carousel></Carousel>
+      <PopUpModal openModal={openModal} setopenModal={modalcontrol} message="Do You Want To Open Zomato?" btnText="Open Zomato"/>
+      <Carousel setopenModal={modalcontrol}/>
       
       
       
