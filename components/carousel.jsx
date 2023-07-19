@@ -16,7 +16,7 @@ import {
 } from "swiper/modules";
 
 const Carousel = () => {
-  const [slides, setSlides] = useState([]);
+  const [slides, setSlides] = useState();
   const [swiper, setSwiper] = useState(null);
   
   useEffect(() => {
