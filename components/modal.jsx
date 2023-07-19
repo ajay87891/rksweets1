@@ -16,13 +16,13 @@ export default function PopUpModal(props) {
         <Modal.Header />
         <Modal.Body>
           <div className="text-center">
-            <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-primary dark:text-gray-200" />
-            <h3 className="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">
+            <HiOutlineExclamationCircle className="mx-auto mb-4 h-14 w-14 text-primary " />
+            <h3 className="mb-5 text-lg font-Kalam text-primary  ">
               {props.message}
             </h3>
             <div className="flex justify-center gap-4">
               <div
-                className="bg-primary flex items-center justify-center rounded cursor-pointer hover:bg-purple-950"
+                className="bg-primary flex items-center justify-center rounded-md cursor-pointer  hover:bg-purple-950"
                 onClick={() => {
                   props.setopenModal(undefined);
                   window.open("https://link.zomato.com/xqzv/rshare?id=17236117864b9edd", "_blank");

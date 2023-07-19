@@ -61,7 +61,7 @@ export default function Carousel(props)  {
                     <img
                       src={urlFor(slide.imageurl)}
                       alt="slide_image"
-                      className="w-72 h-72 object-cover rounded-xl"
+                      className="w-72 h-72 2xl:w-96 2xl:h-96 object-cover rounded-xl"
                     />
                   </div>
                 </SwiperSlide>
