@@ -19,6 +19,8 @@ module.exports = {
       },
       fontFamily: {
         Shrikhand: ["Shrikhand", "cursive"],
+        Kalam: ["Kalam", "cursive"],
+
     
        },
     },

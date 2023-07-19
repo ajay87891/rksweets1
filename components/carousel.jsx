@@ -17,26 +17,19 @@ import {
 
 const Carousel = () => {
   const [slides, setSlides] = useState();
-  const [swiper, setSwiper] = useState(null);
-  
+
   useEffect(() => {
     const query = '*[_type == "poster"]';
 
     client.fetch(query).then((data) => setSlides(data));
-    
-    
   }, []);
-
 
   return (
     <>
       {slides ? (
         <div className="container w-[80vw] ">
           <Swiper
-            
-            
             effect={"coverflow"}
-            onSwiper={setSwiper}
             grabCursor={true}
             centeredSlides={true}
             loop={true}
@@ -54,8 +47,8 @@ const Carousel = () => {
               clickable: true,
             }}
             autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
+              delay: 1500,
+              disableOnInteraction: true,
             }}
             modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
             className="swiper_container "
@@ -63,11 +56,16 @@ const Carousel = () => {
             {slides?.map((slide, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <img
-                    src={urlFor(slide.imageurl)}
-                    alt="slide_image"
-                    className="w-72 h-72 object-cover"
-                  />
+                  <a
+                    href="https://link.zomato.com/xqzv/rshare?id=17236117864b9edd"
+                    target="_blank"
+                  >
+                    <img
+                      src={urlFor(slide.imageurl)}
+                      alt="slide_image"
+                      className="w-72 h-72 object-cover rounded-xl"
+                    />
+                  </a>
                 </SwiperSlide>
               );
             })}
