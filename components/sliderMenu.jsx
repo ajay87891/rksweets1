@@ -8,11 +8,12 @@ import { urlFor, client } from "../constants/client";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import "swiper/css/autoplay";
 
 
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 export default function SliderMenu() {
     const [slides, setSlides] = useState();
@@ -30,10 +31,15 @@ export default function SliderMenu() {
         slidesPerView={"auto"}
         spaceBetween={30}
         centeredSlides={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        loop={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
         {slides?.map((slide, index) => {
