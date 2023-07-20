@@ -8,15 +8,24 @@ import Link from "next/link";
 const Cake = () => {
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center bg-primary/30">
         <div>
-          <h2 className="text-center text-primary font-Shrikhand underline text-4xl mt-20">
+          <h2 className="text-center text-white  font-Shrikhand  text-4xl mt-20">
+            <style jsx>{`
+              h2 {
+                text-shadow:
+   -3px -2px 0 #582c4f,  
+    2px -2px 0 #582c4f,
+    -2px 2px 0 #582c4f,
+     2px 2px 0 #582c4f;
+              }
+            `}</style>
             Our Custom Cakes
           </h2>
           <div className="flex justify-center">
             <p className="w-[80vw] font-Kalam text-xl">
               <span className="font-bold text-primary ">
-              We bake your dreams come true 🍰
+                We bake your dreams come true 🍰
               </span>
               Whether you need a cake for a birthday, wedding, anniversary,
               graduation, or any other special event, we can make it happen. You
@@ -28,12 +37,12 @@ const Cake = () => {
 
         <div
           className="min-h-[70vh] w-screen flex items-center justify-center flex-col"
-        //   style={{
-        //     backgroundImage: `url(${menuBg.src})`,
-        //     backgroundSize: "cover",
-        //     backgroundRepeat: "repeat",
-        //     backgroundPosition: "center",
-        //   }}
+          //   style={{
+          //     backgroundImage: `url(${menuBg.src})`,
+          //     backgroundSize: "cover",
+          //     backgroundRepeat: "repeat",
+          //     backgroundPosition: "center",
+          //   }}
         >
           <div className="border-2 bg-primary/70 border-primary rounded-md mt-2">
             <h2 className="text-white font-Shrikhand text-2xl mx-4 my-2">
@@ -54,4 +63,4 @@ const Cake = () => {
   );
 };
 
-export default MotionWrap(Cake, "bg-white", "Menu");
+export default MotionWrap(Cake, "bg-white", "Cake");

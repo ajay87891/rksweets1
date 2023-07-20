@@ -6,7 +6,7 @@ import { images } from "../constants";
 //import bg from '../public/bgWhite.png'
 
 const Navbar = () => {
-  const menuItems = ["Home", "Services","Menu","contact","About Us"]
+  const menuItems = ["Home", "Services","Menu","Cake","contact","About Us"]
   const [toggel, setToggel] = useState(false);
   return (
     

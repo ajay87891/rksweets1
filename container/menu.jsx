@@ -3,7 +3,8 @@ import { MotionWrap } from "../wrappers";
 import CardWithImage from "@/components/card";
 import menuBg from "../public/assets/menu_bg.jpg";
 import SliderMenu from "@/components/sliderMenu";
-import Link from 'next/link'
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Menu = () => {
   return (
@@ -27,6 +28,7 @@ const Menu = () => {
         </div>
 
         <div
+          
           className="min-h-[70vh] w-screen flex items-center justify-center flex-col"
           style={{
             backgroundImage: `url(${menuBg.src})`,
@@ -41,14 +43,14 @@ const Menu = () => {
             </h2>
           </div>
           <SliderMenu />
-          
         </div>
         <Link href="/menu">
-        <button className="border-2 bg-primary cursor-pointer border-primary rounded-md mt-2 w-60 select-none">
+          <button className="border-2 bg-primary cursor-pointer border-primary rounded-md mt-2 w-60 select-none">
             <h3 className="text-white font-Shrikhand text-2xl mx-4 my-2">
               Open Full Menu
             </h3>
-          </button></Link>
+          </button>
+        </Link>
       </div>
     </>
   );
