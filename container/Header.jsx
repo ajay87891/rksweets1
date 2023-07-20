@@ -12,16 +12,16 @@ import { useState } from "react";
 const Header = () => {
   const [openModal, setOpenModal] = useState();
   
-  const scaleVariants = {
-    whileInView: {
-      scale: [0, 1],
-      opacity: [0, 1],
-      transition: {
-        duration: 1,
-        ease: "easeInOut",
-      },
-    },
-  };
+  // const scaleVariants = {
+  //   whileInView: {
+  //     scale: [0, 1],
+  //     opacity: [0, 1],
+  //     transition: {
+  //       duration: 1,
+  //       ease: "easeInOut",
+  //     },
+  //   },
+  // };
   function modalcontrol(data){
     setOpenModal(data);
   };

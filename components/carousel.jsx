@@ -8,6 +8,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import "../styles/carousel.css";
 import {
   EffectCoverflow,
   Pagination,
@@ -70,7 +71,7 @@ export default function Carousel(props)  {
 
             <div className="slider-controler">
               <div className="swiper-button-prev slider-arrow">
-                <ion-icon name="arrow-back-outline"></ion-icon>
+                <ion-icon className="text-primary" name="arrow-back-outline"></ion-icon>
               </div>
               <div className="swiper-button-next slider-arrow">
                 <ion-icon name="arrow-forward-outline"></ion-icon>
