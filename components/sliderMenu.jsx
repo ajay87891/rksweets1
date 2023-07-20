@@ -24,7 +24,7 @@ export default function SliderMenu() {
   }, []);
   return (
     <>
-    <div className='w-[80vw]'>
+    <div className='w-screen'>
         {slides?
       <Swiper
         slidesPerView={"auto"}
@@ -39,13 +39,13 @@ export default function SliderMenu() {
         {slides?.map((slide, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <div onClick={()=>props.setopenModal('pop-up')}>
+                  {/* <div onClick={()=>props.setopenModal('pop-up')}> */}
                     <CardWithImage
                       imgUrl={urlFor(slide.imageurl)}
                       description={slide.dishdesc}
                       title={slide.dish}
                     />
-                  </div>
+                  {/* </div> */}
                 </SwiperSlide>
               );
             })}

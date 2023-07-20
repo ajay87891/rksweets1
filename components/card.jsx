@@ -6,9 +6,9 @@
 export default function CardWithImage(props) {
   return (
     
-<div class="max-w-sm bg-primary/20 border border-primary rounded-lg shadow my-10">
+<div class="max-w-xs  bg-primary/30  border border-primary rounded-lg shadow my-10">
     <a href="#">
-        <img class="w-72 h-72 2xl:w-96 2xl:h-96 object-cover rounded-xl" src={props.imgUrl} alt="" />
+        <img class="w-80 h-60  object-cover rounded-xl" src={props.imgUrl} alt="" />
     </a>
     <div class="p-5">
         <a href="#">
