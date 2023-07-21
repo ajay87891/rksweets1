@@ -24,9 +24,11 @@ export default function Page({ params }) {
       <div className=" pt-24 lg:pt-32 bg-cover bg-repeat bg-center relative  flex items-center justify-start min-w-screen flex-col min-h-screen">
       {category?.map((cat, index) => {
               return (
+                <div key={index}>
 
                 <div>{cat.name}</div>
-                
+                <div>{cat.price}</div>
+                </div>
               )})}
       </div>
     </>
