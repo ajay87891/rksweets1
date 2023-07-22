@@ -1,8 +1,9 @@
-'use client'
-import { useState,useEffect } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import PagesNavbar from "@/components/PagesNavBar";
 import { urlFor, client } from "../../constants/client";
-import Link from "next/link";
+
+import CardCategory from "@/components/MenuPageComponets/card";
 
 export default function Menu() {
   const [category, setCategory] = useState();
@@ -16,16 +17,21 @@ export default function Menu() {
     <>
       <PagesNavbar></PagesNavbar>
 
-      <div className=" pt-24 lg:pt-32 bg-cover bg-repeat bg-center relative  flex items-center justify-start min-w-screen flex-col min-h-screen">
-      {category?.map((cat, index) => {
-              return (
-                <div key={index}>
-
+      <div className=" mt-24 lg:mt-32 flex justify-center   max-w-screen  min-h-screen">
+        <div className="grid grid-cols-1 sm:grid-cols-2    xl:grid-cols-3  auto-cols-max mx-auto">
+          {category?.map((cat, index) => {
+            return (
+              <div key={index} className="">
                 
-                <Link href={`/menu/${cat.slug}`} ><button className="border-primary">{cat.name}</button></Link>
-                </div>
-
-              )})}
+                <CardCategory
+                  slug={cat.slug}
+                  title={cat.name}
+                  image={cat.imageurl?urlFor(cat.imageurl):null}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

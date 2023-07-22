@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 //import { images } from "../constants";
-import bg from "../public/assets/bg.png";
+import bg from "../public/assets/bg.webp";
 //import {AppWrap} from "../wrapper";
 import Typewriter from "typewriter-effect";
 import Carousel from "@/components/carousel";
