@@ -4,6 +4,7 @@ import CardWithImage from "@/components/card";
 import menuBg from "../public/assets/menu_bg.jpg";
 import SliderMenu from "@/components/sliderMenu";
 import Link from "next/link";
+import CakeDiv from "@/components/CakeDiv";
 
 const Cake = () => {
   return (
@@ -49,6 +50,9 @@ const Cake = () => {
               Our Popular Cakes
             </h2>
           </div>
+          <CakeDiv/>
+
+
           {/* <SliderMenu /> */}
         </div>
         {/* <Link href="/menu">
