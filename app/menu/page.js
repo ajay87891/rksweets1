@@ -31,6 +31,7 @@ export default function Menu() {
                 <CardCategory
                   slug={cat.slug}
                   title={cat.name}
+                  url="menu"
                   image={cat.imageurl ? urlFor(cat.imageurl) : null}
                 />
               </div>

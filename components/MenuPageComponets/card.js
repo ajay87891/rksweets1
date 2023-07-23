@@ -6,7 +6,7 @@ import Card from "react-animated-3d-card";
 export default function CardCategory(props) {
   return (
     <div className="mt-4 mx-auto px-4">
-      <Link href={`/menu/${props.slug}`}>
+      <Link href={`/${props.url}/${props.slug}`}>
         <Card
           style={{
             backgroundColor: "transparent",
