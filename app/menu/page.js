@@ -4,6 +4,7 @@ import PagesNavbar from "@/components/PagesNavBar";
 import { urlFor, client } from "../../constants/client";
 
 import CardCategory from "@/components/MenuPageComponets/card";
+import Link from "next/link";
 
 export default function Menu() {
   const [category, setCategory] = useState();
@@ -37,6 +38,16 @@ export default function Menu() {
           })}
         </div>
       </div>
+      <div className="flex flex-col items-center justify-center mt-2">
+        <Link href="/fullmenu" ><button class="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none ">Open All Items</button></Link>
+            <Link href="/" ><button
+          type="button"
+          class="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
+        >
+          Return
+        </button></Link></div>
+        
+      
     </>
   );
 }

@@ -13,6 +13,7 @@ import "swiper/css/autoplay";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
+import Link from "next/link";
 
 export default function SliderMenu() {
   const [slides, setSlides] = useState();
@@ -49,11 +50,11 @@ export default function SliderMenu() {
               return (
                 <SwiperSlide key={index}>
                   {/* <div onClick={()=>props.setopenModal('pop-up')}> */}
-                  <CardWithImage
+                  <Link href="/menu"><CardWithImage
                     imgUrl={urlFor(slide.imageurl)}
                     description={slide.dishdesc}
                     title={slide.dish}
-                  />
+                  /></Link>
                   {/* </div> */}
                 </SwiperSlide>
               );

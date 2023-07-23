@@ -74,19 +74,26 @@ const PagesNavbar = () => {
               <HiX className="text-white  h-9 w-9 absolute right-5" />
             </button>
             <ul className="flex flex-col space-y-8 mt-8">
-              {menuItems.map((item) => {
-                return (
-                  <li key={item}>
+              
+                  <li >
                     <a
                       className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
-                      href={`#${item}`}
+                      href="/"
                       onClick={() => setToggel(false)}
                     >
-                      {item}
+                      Home
                     </a>
                   </li>
-                );
-              })}
+                  <li >
+                    <a
+                      className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
+                      href="/contact"
+                      onClick={() => setToggel(false)}
+                    >
+                     Contact
+                    </a>
+                  </li>
+              
             </ul>
           </motion.div>
         ) : (
