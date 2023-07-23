@@ -23,21 +23,22 @@ export default function Page({ params }) {
         </h1>
       ) : null}
 
-      <div className="  flex items-center  flex-col min-h-screen">
+      <div className="  grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  auto-cols-max mx-auto ">
         {category?.map((cat, index) => {
           return (
-            <div key={index} className=" flex justify-center items-center py-2">
-              <img src={urlFor(cat.imageurl)}/>
+            <div key={index} className=" mt-4 mx-auto border border-primary rounded-lg shadow">
+              <img className=" w-48 h-48 rounded-lg" src={urlFor(cat.imageurl)}/>
             </div>
           );
-        })}
-        <Link href="/menu" ><button
+        })}</div>
+        <div className="mt-4 flex items-center justify-center">
+        <Link href="/cake" ><button
           type="button"
           class="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
         >
           Return
-        </button></Link>
-      </div>
+        </button></Link></div>
+      
     </>
   );
 }
