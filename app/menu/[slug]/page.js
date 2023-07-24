@@ -9,7 +9,7 @@ export default function Page({ params }) {
   const [category, setCategory] = useState();
 
   useEffect(() => {
-    const query = `*[_type == "dish" && category->slug == '${params.slug}']
+    const query = `*[_type == "dish" && category->slug == '${params.slug}' ] | order(_createdAt asc)
     {name,price,"category":category->name}`;
 
     client.fetch(query).then((data) => setCategory(data));
@@ -31,7 +31,7 @@ export default function Page({ params }) {
                 {cat.name}
               </h3>
               <img className="hidden md:block w-72" src={svg.src} />
-              <div className="text-sm md:text-2xl lg:text-4xl text-primary  px-8">
+              <div className="text-sm md:text-2xl lg:text-4xl text-primary min-w-[10rem] px-8">
                 {cat.price}
                 <span>&#x20B9;</span>
               </div>

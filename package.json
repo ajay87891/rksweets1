@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "v1",
     "@sanity/client": "^6.1.7",
     "@sanity/image-url": "^1.0.2",
     "autoprefixer": "^10.4.14",

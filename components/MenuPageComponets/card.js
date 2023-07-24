@@ -22,7 +22,7 @@ export default function CardCategory(props) {
               }  flex items-center justify-center`}
             >
               
-              <div className="text-white text-xl md:text-2xl  lg:text-3xl 2xl:text-5xl ">{props.title}</div>
+              <div className="text-white text-xl md:text-2xl  lg:text-3xl  ">{props.title}</div>
             </button>
           </div>
         </Card>
