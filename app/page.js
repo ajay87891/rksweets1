@@ -12,9 +12,10 @@ export default function Home() {
       <Navbar></Navbar>
       <Header></Header>
       <Services></Services>
+      <About></About>
       <Cake></Cake>
       <Menu></Menu>
-      <About></About>
+      
       <Footer></Footer>
 
     </>

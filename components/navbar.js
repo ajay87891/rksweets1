@@ -16,7 +16,7 @@ const Navbar = () => {
         <img src={images.logo.src} alt="logo" className="max-w-[70px] 2xl:max-w-[120px]" />
       </div>
       <div className="hidden md:block ">
-      <ul className="flex space-x-8 ">
+      <ul className="flex space-x-8 font-Coiny">
         {menuItems.map(
           (item) => {
             return (

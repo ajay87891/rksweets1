@@ -2,6 +2,7 @@
 
 import PagesNavbar from "@/components/PagesNavBar";
 import storeimage from "../../public/assets/storeimage.jpeg"
+import Footer from "@/container/footer";
 
 import Link from "next/link";
 
@@ -15,7 +16,7 @@ export default function Page() {
           About Us
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center">
-        <p className="w-[70vw] font-Lora text-xl">
+        <p className="w-[70vw] font-Lora text-lg md:text-xl ">
           We are writing to share some exciting history, about our business and
           the remarkable journey we have embarked upon since our establishment
           in 1983. As a valued firm, we believe it&apos;s important to keep you
@@ -85,6 +86,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

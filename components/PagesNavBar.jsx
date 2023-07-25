@@ -6,6 +6,7 @@ import { images } from "../constants";
 //import bg from '../public/bgWhite.png'
 import Link from "next/link";
 
+
 const PagesNavbar = () => {
   const menuItems = ["Home", "contact", "About Us"];
   const [toggel, setToggel] = useState(false);
@@ -20,6 +21,15 @@ const PagesNavbar = () => {
       </div>
       <div className="hidden md:block ">
         <ul className="flex space-x-8 ">
+          <li className="cursor-pointer flex flex-col group items-center">
+            <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
+            <Link
+              className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase"
+              href={`/`}
+            >
+              
+            </Link>
+          </li>
           <li className="cursor-pointer flex flex-col group items-center">
             <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
             <Link
@@ -74,26 +84,24 @@ const PagesNavbar = () => {
               <HiX className="text-white  h-9 w-9 absolute right-5" />
             </button>
             <ul className="flex flex-col space-y-8 mt-8">
-              
-                  <li >
-                    <a
-                      className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
-                      href="/"
-                      onClick={() => setToggel(false)}
-                    >
-                      Home
-                    </a>
-                  </li>
-                  <li >
-                    <a
-                      className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
-                      href="/contact"
-                      onClick={() => setToggel(false)}
-                    >
-                     Contact
-                    </a>
-                  </li>
-              
+              <li>
+                <a
+                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
+                  href="/"
+                  onClick={() => setToggel(false)}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
+                  href="/contact"
+                  onClick={() => setToggel(false)}
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </motion.div>
         ) : (

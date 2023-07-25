@@ -22,6 +22,7 @@ module.exports = {
         Shrikhand: ["Shrikhand", "cursive"],
         Kalam: ["Kalam", "cursive"],
         Lora: ["Lora", "serif"],
+        Coiny: ["Coiny", "serif"],
 
     
        },
