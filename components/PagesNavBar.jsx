@@ -5,7 +5,9 @@ import { motion } from "framer-motion";
 import { images } from "../constants";
 //import bg from '../public/bgWhite.png'
 import Link from "next/link";
-
+import fb from "../public/assets/facebook.png"
+import inst from "../public/assets/instagram.png"
+import wh from "../public/assets/whatsapp.svg"
 
 const PagesNavbar = () => {
   const menuItems = ["Home", "contact", "About Us"];
@@ -20,16 +22,26 @@ const PagesNavbar = () => {
         />
       </div>
       <div className="hidden md:block ">
-        <ul className="flex space-x-8 ">
+        <ul className="flex space-x-8 font-Coiny">
           <li className="cursor-pointer flex flex-col group items-center">
             <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
-            <Link
+            <a  target="_blank"
               className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase"
-              href={`/`}
+              href="https://www.facebook.com/rksweets.bakers?mibextid=LQQJ4d"
             >
-              
-            </Link>
+              <img className="w-6 text-white" src={fb.src} />
+            </a>
           </li>
+          <li className="cursor-pointer flex flex-col group items-center">
+            <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
+            <a target="_blank"
+              className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase"
+              href="https://instagram.com/rk_sweets_bakers?igshid=MmIzYWVlNDQ5Yg=="
+            >
+              <img className="w-6 text-white" src={inst.src} />
+            </a>
+          </li>
+          
           <li className="cursor-pointer flex flex-col group items-center">
             <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
             <Link
