@@ -16,7 +16,7 @@ const Services = () => {
     }, []);
     return(
 
-        <div className="min-h-screen">
+        <div className="min-h-[60vh]">
       <h2 className="text-center text-primary font-Shrikhand underline text-4xl mt-20">Our Services</h2>
       <div className="flex justify-center">
         <p className="w-[80vw] font-Kalam text-xl">
