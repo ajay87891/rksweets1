@@ -33,9 +33,9 @@ const PagesNavbar = () => {
             <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
             <Link
               className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase"
-              href={`/contact`}
+              href={`/about`}
             >
-              Contact
+              About Us
             </Link>
           </li>
         </ul>

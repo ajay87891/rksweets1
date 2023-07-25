@@ -6,7 +6,7 @@ import { images } from "../constants";
 //import bg from '../public/bgWhite.png'
 
 const Navbar = () => {
-  const menuItems = ["Home", "Services","Menu","Cake","contact","About Us"]
+  const menuItems = ["Home", "Services","Menu","Cake","contact"]
   const [toggel, setToggel] = useState(false);
   return (
     
@@ -27,6 +27,11 @@ const Navbar = () => {
             );
           }
         )}
+        <li className="cursor-pointer flex flex-col group items-center" >
+                <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
+                <a className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase" href={`/about`}>About Us</a>
+              
+              </li>
       </ul>
       </div>
       <div className="md:hidden ">

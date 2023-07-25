@@ -35,8 +35,8 @@ const Services = () => {
             key={service.title + index}
           >
             <img src={urlFor(service.imageurl)} alt={service.title} className="w-full h-44 rounded-md object-cover"/>
-            <h2 className=" text-xl font-bold mt-5" >{service.title}</h2>
-            <p className=" p-text mt-5" >{service.description}</p>
+            <h2 className=" text-xl font-Shrikhand text-primary font-bold mt-5" >{service.title}</h2>
+            <p className=" text-sm font-Kalam mt-5" >{service.description}</p>
 
 
 
