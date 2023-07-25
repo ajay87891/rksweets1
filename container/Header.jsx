@@ -65,6 +65,10 @@ const Header = () => {
           
         </div>
       </motion.div>
+      
+      
+
+      
       <PopUpModal openModal={openModal} setopenModal={modalcontrol} message="Do You Want To Open Zomato?" btnText="Open Zomato"/>
       <Carousel setopenModal={modalcontrol}/>
       

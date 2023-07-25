@@ -18,7 +18,7 @@ export default function Page() {
         <p className="w-[70vw] font-Lora text-xl">
           We are writing to share some exciting history, about our business and
           the remarkable journey we have embarked upon since our establishment
-          in 1983. As a valued firm, we believe it's important to keep you
+          in 1983. As a valued firm, we believe it&apos;s important to keep you
           updated on our progress and the new opportunities that lie ahead.
           <br />
           With immense pride, we can confidently say that our commitment to
@@ -33,7 +33,7 @@ export default function Page() {
           <br />
           Today, we are thrilled to announce that we have expanded our
           operations, creating a new empire that offers an even wider range of
-          services to meet our customers' evolving needs.
+          services to meet our customers&apos; evolving needs.
           <br /></p> <img className="w-80" src={storeimage.src}/> </div> <p className="px-10 text-justify font-Lora text-xl">
           In addition to our renowned restaurant, we have ventured into the
           realm of sweets, offering a delectable assortment of traditional and
@@ -47,7 +47,7 @@ export default function Page() {
           hall that serves as an exquisite venue for various celebrations and
           events.
           <br />
-          Whether it's a wedding, corporate gathering, or any other special
+          Whether it&apos;s a wedding, corporate gathering, or any other special
           occasion, our banquet hall provides an elegant ambiance, impeccable
           service, and top-notch amenities to create unforgettable memories for
           our guests.
@@ -56,10 +56,10 @@ export default function Page() {
           producing an array of freshly baked goods, ranging from artisan bread
           to mouthwatering pastries. Our bakery is a testament to our commitment
           to culinary excellence and our desire to cater to all aspects of our
-          customers' desires.
+          customers&apos; desires.
           <br />
           We truly believe that our new ventures will not only enhance our
-          customers' experience but also create new avenues for growth and
+          customers&apos; experience but also create new avenues for growth and
           prosperity. Our aim is to continue raising the bar in the industry,
           setting new standards for quality, innovation, and customer service.
           <br />
