@@ -8,7 +8,7 @@ export default function CardWithImage(props) {
     
 <div class="max-w-xs  bg-primary/60 backdrop-blur-md  border border-primary rounded-lg shadow my-10">
     
-        <img class="w-80 h-60  object-cover rounded-xl" src={props.imgUrl} alt="" />
+        <img class="w-[19rem] h-60  object-cover rounded-xl" src={props.imgUrl} alt="" />
     
     <div class="p-5">
         

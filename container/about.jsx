@@ -19,7 +19,7 @@ const About = () => {
               <h2 className=" text-primary  font-Shrikhand text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl mb-2 text-left">
                 Fresh and Fast: The Best Place for Healthy and Delicious Meals
               </h2>
-              <p className=" text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-Kalam pb-5">
+              <p className=" text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-Kalam pb-5">
                 If you’re looking for a place to enjoy a healthy and delicious
                 meal, look no further than Fresh and Fast. We use only the
                 freshest ingredients and prepare them in a fast and convenient
@@ -41,7 +41,7 @@ const About = () => {
                 <h3 className="text-primary  font-Shrikhand text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl mb-2 text-left px-2">
                 <span className="underline">R.K. Sweets:</span> The Ultimate Destination for Food Lovers
                 </h3>{" "}
-                <p className="text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-Kalam px-8">
+                <p className=" text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-Kalam px-8">
                 RK Sweets is the ultimate destination for food lovers. Whether you like it mild or hot, sweet or sour we have something for you.. You can choose from our wide range of dishes, such as samosas, korma, momos, paneer, lassi, and more, all made with fresh and quality ingredients
                 </p>
                 <Link href="/about">

@@ -5,7 +5,7 @@ import Card from "react-animated-3d-card";
 
 export default function CardCategory(props) {
   return (
-    <div className="mt-4 mx-auto px-4">
+    <div className="mt-4 mx-auto px-2">
       <Link href={`/${props.url}/${props.slug}`}>
         <Card
           style={{
@@ -17,7 +17,7 @@ export default function CardCategory(props) {
           <div className="wrapper relative">
             <div className="absolute top-0 left-0 -z-10"><img src={props.image}></img></div>
             <button
-              className={`w-80 h-32 relative z-10 ${
+              className={`w-72 h-32 relative z-10 ${
                 props.image ? "bg-black/20" : "bg-primary"
               }  flex items-center justify-center`}
             >
