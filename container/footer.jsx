@@ -1,9 +1,10 @@
+"use client";
 import ContactComponent from "@/components/contact";
-
+import { MotionWrap } from "../wrappers";
 const Footer = () => {
   return (
     <>
-      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 2xl:hidden" />
       <footer className=" ">
         <ContactComponent />
         <div className="mb-5">
@@ -23,4 +24,5 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+
+export default MotionWrap(Footer, "bg-white", "contact")

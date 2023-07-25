@@ -13,12 +13,14 @@ const About = () => {
           </div>
           <div className="relative z-10">
             <div className=" md:w-[40vw] mt-4 px-4 ">
-              <h2 className=" text-primary text font-Shrikhand text-xl md:text-2xl lg:text-5xl 2xl:text-7xl mb-2 text-left">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              <h2 className=" text-primary  font-Shrikhand text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl mb-2 text-left">
+                Fresh and Fast: The Best Place for Healthy and Delicious Meals
               </h2>
-              <p className=" text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl">
-                Lorem ipsum dolor sit amet, consectetur adip Lorem, ipsum dolor
-                sit amet consectetur adipisicing elit. Aspernatur, eligendi.
+              <p className=" text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-Kalam pb-5">
+                If you’re looking for a place to enjoy a healthy and delicious
+                meal, look no further than Fresh and Fast. We use only the
+                freshest ingredients and prepare them in a fast and convenient
+                way.
               </p>
             </div>
           </div>
@@ -32,12 +34,12 @@ const About = () => {
             </div>
             <div className="md:w-[50vw]  flex flex-col py-12 items-center justify-center ">
               <div className="md:w-[35vw]">
-                
-                <h3 className="text-4xl">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
-                  sunt.
+                <h3 className="text-primary  font-Shrikhand text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-5xl mb-2 text-left px-2">
+                <span className="underline">R.K. Sweets:</span> The Ultimate Destination for Food Lovers
                 </h3>{" "}
-                <p className="px-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut nulla sunt ullam! Temporibus officia deleniti quae assumenda provident, ullam fugiat voluptatem unde magni, dolore natus quidem id consequuntur nemo nostrum.</p>
+                <p className="text-xs sm:text-sm md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl font-Kalam px-8">
+                Spice It Up is the ultimate destination for Indian food lovers. Whether you like it mild or hot, sweet or sour we have something for you.. You can choose from our wide range of dishes, such as samosas, korma, momos, paneer, lassi, and more, all made with fresh and quality ingredients
+                </p>
               </div>
               <div className=" ">
                 <img src={about2.src} className=" md:w-[30vw] pt-16" />
