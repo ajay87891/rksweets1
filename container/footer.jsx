@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8 2xl:hidden" />
-      <footer className=" ">
+      <footer className=" mt-10 ">
         <ContactComponent />
         <div className="mb-5">
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />

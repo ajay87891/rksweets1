@@ -3,6 +3,7 @@ import React, {useState} from "react";
 import { HiX} from 'react-icons/hi'
 import { motion } from "framer-motion";
 import { images } from "../constants";
+import Link from "next/link";
 //import bg from '../public/bgWhite.png'
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
         )}
         <li className="cursor-pointer flex flex-col group items-center" >
                 <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
-                <a className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase" href={`/about`}>About Us</a>
+                <Link className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase" href={`/about`}>About Us</Link>
               
               </li>
       </ul>
@@ -70,6 +71,9 @@ const Navbar = () => {
             );
           }
         )}
+        <li >
+                <Link className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase" href="/about" onClick={()=> setToggel(false)}>About Us</Link>
+              </li>
         </ul>
 
 
