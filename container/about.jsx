@@ -1,15 +1,19 @@
-"use Client";
+'use client'
 import aboutbg from "../public/assets/aboutbg.png";
 import about1 from "../public/assets/about1.jpeg";
 import about2 from "../public/assets/about2.jpg";
 import stars from "../public/assets/icons/stars.png";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="min-h-screen pt-10 bg-primary/5">
       <div className=" flex justify-center">
-        <div className="w-[90vw] relative min-h-[20rem]">
+        <motion.div 
+            whileInView={{x:[200,0],opacity:1}}
+            
+            transition={{duration:0.5, type:"tween"}} className="w-[90vw] relative min-h-[20rem]">
           <div className="md:absolute top-0 left-0  ">
             <img className="w-[90vw]" src={aboutbg.src} />
           </div>
@@ -27,7 +31,7 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="flex justify-center md:mt-24 lg:mt-36 xl:mt-52 2xl:mt-80 ">
         <div className="w-screen min-h-[20rem] bg-white mb-4">
