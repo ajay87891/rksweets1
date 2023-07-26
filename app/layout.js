@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Scroll from '@/components/Scroll'
-import logo from "../public/assets/logo.png"
+
 
 
 

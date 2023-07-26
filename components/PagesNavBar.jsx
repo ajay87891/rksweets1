@@ -7,7 +7,7 @@ import { images } from "../constants";
 import Link from "next/link";
 import fb from "../public/assets/facebook.png"
 import inst from "../public/assets/instagram.png"
-import wh from "../public/assets/whatsapp.svg"
+// import wh from "../public/assets/whatsapp.svg"
 
 
 const PagesNavbar = () => {
@@ -16,11 +16,12 @@ const PagesNavbar = () => {
   return (
     <nav className="w-full flex justify-between items-center  bg-primary/80 fixed top-0 backdrop-blur-sm px-2 z-40 py-3 lg:py-4">
       <div className="flex justify-center items-center  ">
+        <Link href="/">
         <img
           src={images.logo.src}
           alt="logo"
           className="max-w-[70px] 2xl:max-w-[120px]"
-        />
+        /></Link>
       </div>
       <div className="hidden md:block ">
         <ul className="flex space-x-8 font-Coiny">
@@ -50,6 +51,15 @@ const PagesNavbar = () => {
               href={`/`}
             >
               Home
+            </Link>
+          </li>
+          <li className="cursor-pointer flex flex-col group items-center">
+            <div className="w-2 h-2 bg-transparent  mb-1 rounded-full group-hover:bg-violet-200" />
+            <Link
+              className="text-white font-medium 2xl:text-2xl font-Quicksand group-hover:text-violet-200 ease-in-out duration-500 transition-all uppercase"
+              href={`wedding`}
+            >
+              Wedding & Gifting
             </Link>
           </li>
           <li className="cursor-pointer flex flex-col group items-center">
@@ -104,6 +114,15 @@ const PagesNavbar = () => {
                   onClick={() => setToggel(false)}
                 >
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny"
+                  href="/wedding"
+                  onClick={() => setToggel(false)}
+                >
+                  Wedding & Gifting
                 </Link>
               </li>
               <li>

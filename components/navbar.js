@@ -12,11 +12,12 @@ const Navbar = () => {
   return (
     <nav className="w-full flex justify-between items-center  bg-primary/80 fixed top-0 backdrop-blur-sm px-2 z-40 py-3 lg:py-4">
       <div className="flex justify-center items-center  ">
+        <a href="#Home">
         <img
           src={images.logo.src}
           alt="logo"
           className="max-w-[70px] 2xl:max-w-[120px]"
-        />
+        /></a>
       </div>
       <div className="hidden md:block ">
         <ul className="flex space-x-8 font-Coiny">
@@ -103,6 +104,15 @@ const Navbar = () => {
                   </li>
                 );
               })}
+              <li>
+                <Link
+                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny"
+                  href="/wedding"
+                  onClick={() => setToggel(false)}
+                >
+                  Wedding & Gifting
+                </Link>
+              </li>
               <li>
                 <Link
                   className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny"
