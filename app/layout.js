@@ -1,12 +1,15 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Scroll from '@/components/Scroll'
+import logo from "../public/assets/logo.png"
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'R.K. Sweets',
   description: '',
+  image: logo.src,
 }
 
 export default function RootLayout({ children }) {
@@ -17,3 +20,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
