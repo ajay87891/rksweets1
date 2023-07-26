@@ -13,8 +13,9 @@ export default function Home() {
       <Header></Header>
       <Services></Services>
       <About></About>
-      <Cake></Cake>
       <Menu></Menu>
+      <Cake></Cake>
+      
       
       <Footer></Footer>
 

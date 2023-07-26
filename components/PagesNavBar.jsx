@@ -9,6 +9,7 @@ import fb from "../public/assets/facebook.png"
 import inst from "../public/assets/instagram.png"
 import wh from "../public/assets/whatsapp.svg"
 
+
 const PagesNavbar = () => {
   const menuItems = ["Home", "contact", "About Us"];
   const [toggel, setToggel] = useState(false);
@@ -97,22 +98,22 @@ const PagesNavbar = () => {
             </button>
             <ul className="flex flex-col space-y-8 mt-8">
               <li>
-                <a
-                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
+                <Link
+                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny"
                   href="/"
                   onClick={() => setToggel(false)}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase"
-                  href="/contact"
+                <Link
+                  className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny"
+                  href="/about"
                   onClick={() => setToggel(false)}
                 >
-                  Contact
-                </a>
+                  About Us
+                </Link>
               </li>
             </ul>
           </motion.div>

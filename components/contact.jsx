@@ -185,11 +185,11 @@ export default function ContactComponent() {
                       </defs>
                     </svg>
                   </div>
-                  <h3 className="text-lg font-medium text-white">
+                  <h3 className="text-lg font-medium text-white font-Coiny ">
                     Contact information
                   </h3>
 
-                  <dl className="mt-8 space-y-6">
+                  <dl className="mt-8 space-y-6 font-Coiny">
                     <dt>
                       <span className="sr-only">Address</span>
                     </dt>
@@ -246,7 +246,7 @@ export default function ContactComponent() {
                       </a>
                     </dd>
                   </dl>
-                  <h3 className="text-lg font-medium text-white mt-10">
+                  <h3 className="text-lg font-medium text-white mt-10 font-Coiny">
                     GSTIN
                   </h3>
                   <dl className="mt-2 ">
@@ -256,7 +256,7 @@ export default function ContactComponent() {
                     <dd className=" text-purple-50">
                       
                         
-                        <span className="ml-3">
+                        <span className="ml-3 font-Coiny">
                         03AANFR5881K1ZO
                         </span>
                       

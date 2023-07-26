@@ -66,13 +66,13 @@ const Navbar = () => {
           (item) => {
             return (
               <li key={item}>
-                <a className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase" href={`#${item}`} onClick={()=> setToggel(false)}>{item}</a>
+                <a className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny" href={`#${item}`} onClick={()=> setToggel(false)}>{item}</a>
               </li>
             );
           }
         )}
         <li >
-                <Link className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase" href="/about" onClick={()=> setToggel(false)}>About Us</Link>
+                <Link className="text-white text-2xl cursor-pointer font-medium font-Quicksand hover:text-purple-500 ease-in-out duration-500 transition-all uppercase font-Coiny" href="/about" onClick={()=> setToggel(false)}>About Us</Link>
               </li>
         </ul>
 
