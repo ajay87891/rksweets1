@@ -10,7 +10,7 @@ export const metadata = {
   title: 'R.K. Sweets',
   description: '',
   openGraph: {
-    image:logo.src
+    image:"https://www.rksweets.in/_next/static/media/logo.0581772b.png"
     
   },
   
