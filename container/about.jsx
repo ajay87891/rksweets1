@@ -11,7 +11,7 @@ const About = () => {
     <div className="min-h-screen pt-10 bg-primary/5">
       <div className=" flex justify-center">
         <motion.div 
-            whileInView={{x:[200,0],opacity:1}}
+            whileInView={{x:[-200,0],opacity:1}}
             
             transition={{duration:0.5, type:"tween"}} className="w-[90vw] relative min-h-[20rem]">
           <div className="md:absolute top-0 left-0  ">
