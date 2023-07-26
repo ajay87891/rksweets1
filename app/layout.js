@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'R.K. Sweets',
-  description: '',
+  description: 'Making your Occasions more sweeter',
   openGraph: {
     image:"https://www.rksweets.in/_next/static/media/logo.0581772b.png"
     
