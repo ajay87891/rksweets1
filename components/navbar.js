@@ -77,13 +77,13 @@ const Navbar = () => {
         </button>
         {toggel ? (
           <motion.div
-            className=" opacity-0 fixed z-50 top-0 bottom-0 right-0 p-4 w-[80%] h-[100vh] flex  flex-col  bg-primary shadow-lg bg-cover bg-repeat "
+            className=" opacity-0 fixed z-50 top-0 bottom-0 right-0 p-4 w-[60vw]  h-[100vh] flex  flex-col  bg-primary shadow-lg bg-cover bg-repeat "
             style={
               {
                 //backgroundImage: `url(${bg.src})`
               }
             }
-            whileInView={{ x: [300, 0], opacity: [0, 1] }}
+            whileInView={{ x: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 0.75, ease: "easeOut" }}
           >
             <button onClick={() => setToggel(false)}>
