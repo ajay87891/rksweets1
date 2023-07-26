@@ -9,7 +9,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'R.K. Sweets',
   description: '',
-  image: logo.src,
+  openGraph: {
+    image:logo.src
+    
+  },
+  
 }
 
 export default function RootLayout({ children }) {
