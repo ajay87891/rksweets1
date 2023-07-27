@@ -21,7 +21,7 @@ export default function Page() {
           Wedding & Gifting
         </h1>
         <motion.div
-          whileInView={{ scale: [1.2, 1] }}
+          whileInView={{ scale: [0.5, 1] }}
           transition={{ duration: 1, type: "tween" }}
           className="w-screen relative "
         >
