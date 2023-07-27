@@ -11,7 +11,6 @@ import WeddingDiv from "@/components/weadingpage/wedinggrid";
 import { motion } from "framer-motion";
 import GiftDiv from "@/components/weadingpage/giftingdrid";
 
-
 export default function Page() {
   return (
     <>
@@ -22,10 +21,10 @@ export default function Page() {
           Wedding & Gifting
         </h1>
         <motion.div
-        whileInView={{scale:[1.2,1]}}
-        transition={{duration:1, type:"tween"}}
-        
-        className="w-screen relative ">
+          whileInView={{ scale: [1.2, 1] }}
+          transition={{ duration: 1, type: "tween" }}
+          className="w-screen relative "
+        >
           <div className="md:absolute top-0 left-0  ">
             <img className="w-screen h-80 object-cover " src={w2.src} />
           </div>
@@ -53,13 +52,24 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div >
-          <h2 className="text-primary  font-Shrikhand text-xl md:text-3xl lg:text-5xl 2xl:text-6xl text-center">Our Wedding Boxes</h2>
+        <motion.div
+        whileInView={{scale:[0,1],opacity:[0,1]}}
+        transition={{duration:1, type:"tween"}}>
+          <h2 className="text-primary  font-Shrikhand text-xl md:text-3xl lg:text-5xl 2xl:text-6xl text-center">
+            Our Wedding Boxes
+          </h2>
           <WeddingDiv></WeddingDiv>
-        </div>
-        <div className="w-screen relative ">
+        </motion.div>
+        <motion.div
+          whileInView={{ y: [200, 0], opacity: [0, 1] }}
+          transition={{ duration: 1, type: "tween" }}
+          className="w-screen relative "
+        >
           <div className="md:absolute top-0 left-0  ">
-            <img className="w-screen md:h-80 h-[100%] object-cover " src={w3.src} />
+            <img
+              className="w-screen md:h-80 h-[100%] object-cover "
+              src={w3.src}
+            />
           </div>
           <div className="relative z-10 ">
             <div className=" md:w-screen mt-4 h-80  bg-white/25 flex flex-col items-start justify-center">
@@ -75,7 +85,7 @@ export default function Page() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         <div className="w-screen h-80 flex items-center justify-center">
           <div className="w-[90vw] md:w-[60vw] space-y-8">
@@ -92,7 +102,11 @@ export default function Page() {
             </p>
           </div>
         </div>
-        <div className="w-screen flex flex-wrap">
+        <motion.div
+          whileInView={{ x: [-200, 0], opacity: [0, 1] }}
+          transition={{ duration: 1, type: "tween" }}
+          className="w-screen flex flex-wrap"
+        >
           <div className="md:w-[50vw] h-96">
             <div className=" h-96 flex items-center justify-center">
               <div className=" md:w-[50vw] space-y-8">
@@ -115,12 +129,13 @@ export default function Page() {
             {" "}
             <img src={w1.src} className="w-screen h-96 object-cover" />
           </div>
-        </div>
-        <div >
-          <h2 className="text-primary  font-Shrikhand text-xl md:text-3xl lg:text-5xl 2xl:text-6xl text-center">Our Gifting Boxes</h2>
+        </motion.div>
+        <div>
+          <h2 className="text-primary  font-Shrikhand text-xl md:text-3xl lg:text-5xl 2xl:text-6xl text-center">
+            Our Gifting Boxes
+          </h2>
           <GiftDiv></GiftDiv>
         </div>
-
 
         <div className="flex flex-col items-center justify-center mt-2">
           <Link href="/">
