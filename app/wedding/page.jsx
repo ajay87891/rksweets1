@@ -7,6 +7,9 @@ import w1 from "../../public/assets/w1.webp";
 import w2 from "../../public/assets/w2.webp";
 import w3 from "../../public/assets/w3.webp";
 import Link from "next/link";
+import WeddingDiv from "@/components/weadingpage/wedinggrid";
+import { motion } from "framer-motion";
+
 
 export default function Page() {
   return (
@@ -17,22 +20,26 @@ export default function Page() {
         <h1 className="text-primary font-Shrikhand text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl text-center">
           Wedding & Gifting
         </h1>
-        <div className="w-screen relative ">
+        <motion.div
+        whileInView={{scale:[1.2,1]}}
+        transition={{duration:1, type:"tween"}}
+        
+        className="w-screen relative ">
           <div className="md:absolute top-0 left-0  ">
             <img className="w-screen h-80 object-cover " src={w2.src} />
           </div>
           <div className="relative z-10 ">
             <div className=" md:w-screen mt-4 h-80  bg-white/25 flex items-center justify-center">
-              <h2 className=" text-primary px-8  font-Shrikhand text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl mb-2 text-center">
+              <h2 className=" text-primary px-8  font-Shrikhand text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl mb-2 text-center ">
                 Royal Invitations by R.K. Sweets - Premium collection of
                 invitations and giftboxes for weddings and family celebrations.
               </h2>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="w-screen h-80 flex items-center justify-center">
           <div className="w-[90vw] md:w-[60vw] space-y-8">
-            <h1 className="text-priamry text-center text-2xl font-bold">
+            <h1 className="text-priamry text-center text-2xl font-bold font-Lugrasimo text-primary">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Expedita, nisi?
             </h1>
@@ -45,18 +52,22 @@ export default function Page() {
             </p>
           </div>
         </div>
+        <div >
+          <h2 className="text-primary  font-Shrikhand text-xl md:text-3xl lg:text-5xl 2xl:text-6xl text-center">Our Wedding Boxes</h2>
+          <WeddingDiv></WeddingDiv>
+        </div>
         <div className="w-screen relative ">
           <div className="md:absolute top-0 left-0  ">
-            <img className="w-screen h-80 object-cover " src={w3.src} />
+            <img className="w-screen md:h-80 h-[100%] object-cover " src={w3.src} />
           </div>
           <div className="relative z-10 ">
             <div className=" md:w-screen mt-4 h-80  bg-white/25 flex flex-col items-start justify-center">
               <h2 className=" text-primary px-8  font-Shrikhand text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-6xl mb-2 text-center">
                 Every Giftbox - A piece of Art!
               </h2>
-              <p className="md:w-[60vw] text-left px-3">
+              <p className="md:w-[60vw] text-left px-3 font-Kalam font-bold lg:text-2xl">
                 Our sweets are as aesthetic as they are appetizing, Why
-                compromise on giftboxes? Sindhi Sweets can offer you a wholesome
+                compromise on giftboxes? R.K. Sweets can offer you a wholesome
                 solution with exquisite giftboxes, suave hampers, and
                 handcrafted packaging. Like always, we are committed to testing
                 our limits and provide impeccable service.

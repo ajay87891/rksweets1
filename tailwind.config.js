@@ -23,6 +23,7 @@ module.exports = {
         Kalam: ["Kalam", "cursive"],
         Lora: ["Lora", "serif"],
         Coiny: ["Coiny", "serif"],
+        Lugrasimo: ["Lugrasimo", "serif"],
 
     
        },
