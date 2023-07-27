@@ -9,6 +9,7 @@ import w3 from "../../public/assets/w3.webp";
 import Link from "next/link";
 import WeddingDiv from "@/components/weadingpage/wedinggrid";
 import { motion } from "framer-motion";
+import GiftDiv from "@/components/weadingpage/giftingdrid";
 
 
 export default function Page() {
@@ -115,9 +116,9 @@ export default function Page() {
             <img src={w1.src} className="w-screen h-96 object-cover" />
           </div>
         </div>
-        <div className="mt-8 w-screen px-12 min-h-screen">
-          <h2>Our Showcase</h2>
-
+        <div >
+          <h2 className="text-primary  font-Shrikhand text-xl md:text-3xl lg:text-5xl 2xl:text-6xl text-center">Our Gifting Boxes</h2>
+          <GiftDiv></GiftDiv>
         </div>
 
 
