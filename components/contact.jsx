@@ -14,6 +14,8 @@ import inh from "../public/assets/icons/inh.png";
 // import yth from "../public/assets/icons/yth.png";
 import wa from "../public/assets/icons/wa.png";
 import wah from "../public/assets/icons/wah.png";
+import zom from "../public/assets/icons/zom.png";
+import zomh from "../public/assets/icons/zomh.png";
 
 export default function ContactComponent() {
   return (
@@ -68,6 +70,7 @@ export default function ContactComponent() {
                     fill="currentColor"
                   />
                 </pattern>
+
               </defs>
               <rect
                 width={404}
@@ -318,6 +321,18 @@ export default function ContactComponent() {
                       </span>
                       <span className="hidden group-hover:inline">
                         <img className="w-[39px]" src={wah.src} />
+                      </span>
+                    </a>
+                    <a
+                      target="_blank"
+                      href="https://link.zomato.com/xqzv/rshare?id=17236117864b9edd"
+                      className="group "
+                    >
+                      <span className="inline group-hover:hidden">
+                        <img className="w-[46px]" src={zom.src} />
+                      </span>
+                      <span className="hidden group-hover:inline">
+                        <img className="w-[46px]" src={zomh.src} />
                       </span>
                     </a>
                   </div>
