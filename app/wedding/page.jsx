@@ -59,6 +59,16 @@ export default function Page() {
             Our Wedding Boxes
           </h2>
           <WeddingDiv></WeddingDiv>
+          <Link href="/wedding/allWedding">
+          <button
+            type="button"
+            className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none flex flex-wrap items-center justify-center"
+          >
+            View All <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+        </svg>
+          </button>
+        </Link>
         </motion.div>
         <motion.div
           whileInView={{ y: [200, 0], opacity: [0, 1] }}

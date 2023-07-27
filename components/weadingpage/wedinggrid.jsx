@@ -16,12 +16,12 @@ export default function WeddingDiv() {
   const [category, setCategory] = useState();
 
   useEffect(() => {
-    const query = '*[_type == "wedding"]';
+    const query = '*[_type == "wedding"] | order(_id) [0...8]';
 
     client.fetch(query).then((data) => setCategory(data));
   }, []);
   return (
-    <>
+    <Link href="/wedding/allWedding">
     <div className="w-screen hidden md:block ">
       <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 space-y-6 auto-cols-max mx-auto">
         {category?.map((cat, index) => {
@@ -62,6 +62,6 @@ export default function WeddingDiv() {
           </Swiper>
         ) : null}
         </div>
-    </>
+    </Link>
   );
 }
