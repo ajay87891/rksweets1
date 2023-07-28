@@ -13,16 +13,16 @@ export default function Page({ params }) {
 
   useEffect(() => {
     if (params.slug === "random-cakes") {
-      console.log("hello");
+     
       const queryy = `*[_type == "cake"]
     {name,imageurl}`;
       client.fetch(queryy).then((data) => {
-        console.log(data);
+        ;
         // Shuffle array
         const shuffled = data.sort(() => 0.5 - Math.random());
 
         // Get sub-array of first n elements after shuffled
-        let selected = shuffled.slice(0, 10);
+        let selected = shuffled.slice(0, 20);
         setCategory(selected);
 
         setHeading("Random Cakes");
