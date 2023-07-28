@@ -21,7 +21,9 @@ export default function Cake() {
         <h1 className="text-primary font-Shrikhand text-3xl md:text-5xl lg:text-6xl 2xl:text-7xl">
           Cakes
         </h1>
-        <p className="font-Kalam text-xl md:text-3xl lg:text-4xl 2xl:text-5xl">Please Select from categories below</p>
+        <p className="font-Kalam text-xl md:text-3xl lg:text-4xl 2xl:text-5xl">
+          Please Select from categories below
+        </p>
       </div>
       <div className="  flex justify-center   max-w-screen  min-h-screen">
         <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  auto-cols-max mx-auto">
@@ -40,15 +42,16 @@ export default function Cake() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center mt-2">
-        <Link href="/fullmenu" ><button className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none ">Open All Items</button></Link>
-            <Link href="/" ><button
-          type="button"
-          className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
-        >
-          Return
-        </button></Link></div>
-        
-      
+       
+        <Link href="/">
+          <button
+            type="button"
+            className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
+          >
+            Return
+          </button>
+        </Link>
+      </div>
     </>
   );
 }
