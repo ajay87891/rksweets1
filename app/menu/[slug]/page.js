@@ -38,9 +38,16 @@ export default function Page({ params }) {
             </div>
           );
         })}
+       
+        <a target="_blank" href="https://link.zomato.com/xqzv/rshare?id=17236117864b9edd" ><button
+          type="button"
+          className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
+        >
+          Open Zomato to order Online
+        </button></a>
         <Link href="/menu" ><button
           type="button"
-          class="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
+          className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
         >
           Return
         </button></Link>
