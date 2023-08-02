@@ -8,8 +8,25 @@ import Link from "next/link";
 
 export default function Page({ params }) {
   const [category, setCategory] = useState();
+  const [selected, setSelected] = useState();
   
   const [heading, setHeading] = useState();
+  
+  const refresh = ()=>{
+    try{
+      let shuffle = selected.sort(() => 0.5 - Math.random());
+
+    // Get sub-array of first n elements after shuffled
+     
+    setCategory(shuffle.slice(0, 30));
+    }
+    catch{
+    
+    }
+    
+    
+  }
+  
 
   useEffect(() => {
     if (params.slug === "random-cakes") {
@@ -17,13 +34,14 @@ export default function Page({ params }) {
       const queryy = `*[_type == "cake"]
     {name,imageurl}`;
       client.fetch(queryy).then((data) => {
-        ;
+
+        setSelected(data)
         // Shuffle array
         const shuffled = data.sort(() => 0.5 - Math.random());
 
         // Get sub-array of first n elements after shuffled
-        let selected = shuffled.slice(0, 20);
-        setCategory(selected);
+         
+        setCategory(shuffled.slice(0, 30));
 
         setHeading("Random Cakes");
       });
@@ -47,7 +65,7 @@ export default function Page({ params }) {
         {heading}
       </h1>
 
-      <div className="  grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  auto-cols-max mx-auto ">
+      <div className="  grid grid-cols-2   md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  auto-cols-max mx-auto ">
         {category?.map((cat, index) => {
           return (
             <div
@@ -55,14 +73,24 @@ export default function Page({ params }) {
               className=" mt-4 mx-auto border border-primary rounded-lg shadow"
             >
               <img
-                className=" w-48 h-48 rounded-lg"
+                className=" md:w-48 md:h-48 w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
                 src={urlFor(cat.imageurl)}
               />
             </div>
           );
         })}
       </div>
-      <div className="mt-4 flex items-center justify-center">
+      
+      <div className="mt-4 flex flex-col md:flex-row items-center justify-center">
+      {
+        (params.slug === "random-cakes")?<button
+        type="button"
+        onClick={refresh}
+        className="text-white bg-primary hover:bg-violet-950 focus:ring-4 focus:ring-primary/70 font-medium font-Kalam rounded-lg text-xl  px-5 py-2.5 mr-2 mb-2   focus:outline-none "
+      >
+        Load More
+      </button>:null
+      }
         <Link href="/cake">
           <button
             type="button"
