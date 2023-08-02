@@ -4,13 +4,17 @@ import PagesNavbar from "@/components/PagesNavBar";
 import { urlFor, client } from "../../../constants/client";
 import svg from "../../../public/assets/dot.svg";
 import Link from "next/link";
+import PopUpModalCake from "@/components/cakemodal";
+
 
 
 export default function Page({ params }) {
+  const [openModal, setOpenModal] = useState();
   const [category, setCategory] = useState();
   const [selected, setSelected] = useState();
   
   const [heading, setHeading] = useState();
+  const [url,setUrl] = useState();
   
   const refresh = ()=>{
     try{
@@ -58,6 +62,9 @@ export default function Page({ params }) {
       });
     }
   }, []);
+  function modalcontrol(data){
+    setOpenModal(data);
+  };
   return (
     <>
       <PagesNavbar></PagesNavbar>
@@ -70,9 +77,13 @@ export default function Page({ params }) {
           return (
             <div
               key={index}
-              className=" mt-4 mx-auto border border-primary rounded-lg shadow"
+              
+              className=" mt-4 mx-auto border border-primary rounded-lg shadow cursor-pointer"
             >
               <img
+              onClick={()=>{modalcontrol('pop-up');
+              setUrl(urlFor(category[index].imageurl))
+              }}
                 className=" md:w-48 md:h-48 w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
                 src={urlFor(cat.imageurl)}
               />
@@ -80,6 +91,7 @@ export default function Page({ params }) {
           );
         })}
       </div>
+      <PopUpModalCake openModal={openModal} url={url} setopenModal={modalcontrol} message="Please click below to Send us image of cake on Whatsapp for Enquiry" btnText="Send On WhatsApp"/>
       
       <div className="mt-4 flex flex-col md:flex-row items-center justify-center">
       {
