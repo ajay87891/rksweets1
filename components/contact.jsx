@@ -233,6 +233,15 @@ export default function ContactComponent() {
                         <span className="ml-3">9877211141</span>
                       </a>
                     </dd>
+                    <dd className=" text-purple-50">
+                      <a href="tel:+919780201928" className="flex text-base">
+                        <PhoneIcon
+                          className="flex-shrink-0 w-6 h-6 text-purple-200"
+                          aria-hidden="true"
+                        />
+                        <span className="ml-3">9780201928</span>
+                      </a>
+                    </dd>
                     <dt>
                       <span className="sr-only">Email</span>
                     </dt>
