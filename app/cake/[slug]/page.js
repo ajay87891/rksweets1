@@ -47,7 +47,7 @@ export default function Page({ params }) {
          
         setCategory(shuffled.slice(0, 30));
 
-        setHeading("Random Cakes");
+        setHeading("All Category Cakes");
       });
     } else {
       const query = `*[_type == "cake" && category->slug == '${params.slug}']

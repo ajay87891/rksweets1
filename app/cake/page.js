@@ -10,7 +10,7 @@ export default function Cake() {
   const [category, setCategory] = useState();
 
   useEffect(() => {
-    const query = '*[_type == "cakecategory"] | order(_createdAt asc)';
+    const query = '*[_type == "cakecategory"] | order(_updatedAt desc)';
 
     client.fetch(query).then((data) => setCategory(data));
   }, []);
