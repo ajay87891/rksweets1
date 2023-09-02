@@ -35,9 +35,11 @@ export default function Page({ params }) {
   useEffect(() => {
     if (params.slug === "random-cakes") {
      
-      const queryy = `*[_type == "cake"]
+      const queryy = `*[_type == "cake2"]
     {name,imageurl}`;
       client.fetch(queryy).then((data) => {
+        // console.log(data[0].imageurl)
+        // console.log(data)
 
         setSelected(data)
         // Shuffle array
@@ -50,9 +52,10 @@ export default function Page({ params }) {
         setHeading("All Category Cakes");
       });
     } else {
-      const query = `*[_type == "cake" && category->slug == '${params.slug}']
+      const query = `*[_type == "cake2" && category->slug == '${params.slug}']
     {name,imageurl,"category":category->name}`;
       client.fetch(query).then((data) => {
+        console.log(data)
         setCategory(data);
         try {
           setHeading(data[0].category);
@@ -74,20 +77,40 @@ export default function Page({ params }) {
 
       <div className="  grid grid-cols-2   md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  auto-cols-max mx-auto ">
         {category?.map((cat, index) => {
+          console.log(cat.imageurl)
           return (
-            <div
+            cat.imageurl.map((val, ind)=>{
+              console.log(val)
+              return(
+
+              
+              <div
               key={index}
               
               className=" mt-4 mx-auto border border-primary rounded-lg shadow cursor-pointer"
             >
               <img
               onClick={()=>{modalcontrol('pop-up');
-              setUrl(urlFor(category[index].imageurl))
+              setUrl(urlFor(val))
               }}
                 className=" md:w-48 md:h-48 w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
-                src={urlFor(cat.imageurl)}
+                src={urlFor(val)}
               />
-            </div>
+            </div>)
+            })
+            // <div
+            //   key={index}
+              
+            //   className=" mt-4 mx-auto border border-primary rounded-lg shadow cursor-pointer"
+            // >
+            //   <img
+            //   onClick={()=>{modalcontrol('pop-up');
+            //   setUrl(urlFor(category[index]))
+            //   }}
+            //     className=" md:w-48 md:h-48 w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
+            //     src={urlFor(cat)}
+            //   />
+            // </div>
           );
         })}
       </div>
