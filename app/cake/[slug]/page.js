@@ -40,10 +40,16 @@ export default function Page({ params }) {
       client.fetch(queryy).then((data) => {
         // console.log(data[0].imageurl)
         // console.log(data)
+        let d1= data.map((val)=>{
+          return val.imageurl
+        })
+        // console.log(d1.flat(1))
+        let d2= d1.flat(1)
 
-        setSelected(data)
+        setSelected(d2)
+        // console.log(data)
         // Shuffle array
-        const shuffled = data.sort(() => 0.5 - Math.random());
+        const shuffled = d2.sort(() => 0.5 - Math.random());
 
         // Get sub-array of first n elements after shuffled
          
@@ -55,8 +61,12 @@ export default function Page({ params }) {
       const query = `*[_type == "cake2" && category->slug == '${params.slug}']
     {name,imageurl,"category":category->name}`;
       client.fetch(query).then((data) => {
-        console.log(data)
-        setCategory(data);
+        let d1= data.map((val)=>{
+          return val.imageurl
+        })
+        // console.log(d1.flat(1))
+        
+        setCategory(d1.flat(1));
         try {
           setHeading(data[0].category);
         } catch {
@@ -77,11 +87,11 @@ export default function Page({ params }) {
 
       <div className="  grid grid-cols-2   md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5  auto-cols-max mx-auto ">
         {category?.map((cat, index) => {
-          console.log(cat.imageurl)
+          // console.log(cat)
           return (
-            cat.imageurl.map((val, ind)=>{
-              console.log(val)
-              return(
+              
+            
+             
 
               
               <div
@@ -91,13 +101,13 @@ export default function Page({ params }) {
             >
               <img
               onClick={()=>{modalcontrol('pop-up');
-              setUrl(urlFor(val))
+              setUrl(urlFor(cat))
               }}
                 className=" md:w-48 md:h-48 w-36 h-36 lg:w-56 lg:h-56 rounded-lg"
-                src={urlFor(val)}
+                src={urlFor(cat)}
               />
-            </div>)
-            })
+            </div>
+            
             // <div
             //   key={index}
               

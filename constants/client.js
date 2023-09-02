@@ -16,7 +16,16 @@ export const urlFor = (source) => {
     
     if(source)
     {
-        return builder.image(source)
+        
+        try{
+            return builder.image(source)
+            
+        }
+        catch{
+            return "/"
+
+        }
+         
 
     }
     else{
