@@ -13,7 +13,7 @@ const Footer = () => {
             © 2023 RK Sweets™ . All Rights Reserved.
           </span>
           <span className="block text-xs text-gray-500 text-center dark:text-gray-400">
-            Designed and Devlpoped By{" "}
+            Designed and Developed By{" "}
             <a href="https://ajaysingh.live/" className="hover:underline">
               Ajay Singh
             </a>{" "}
