@@ -6,7 +6,7 @@ import a from '../../public/assets/1.png'
 import b from '../../public/assets/2.png'
 import c from '../../public/assets/3.png'
 import d from '../../public/assets/4.png'
-import e from "../../public/assets/5.png."
+import e from "../../public/assets/5.png"
 import f from "../../public/assets/6.png"
 import Link from "next/link";
 
