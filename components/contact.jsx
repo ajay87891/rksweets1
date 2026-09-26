@@ -230,7 +230,7 @@ export default function ContactComponent() {
                           className="flex-shrink-0 w-6 h-6 text-purple-200"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">9877211141</span>
+                        <span className="ml-3">9041908783</span>
                       </a>
                     </dd>
                     <dd className=" text-purple-50">
@@ -239,7 +239,7 @@ export default function ContactComponent() {
                           className="flex-shrink-0 w-6 h-6 text-purple-200"
                           aria-hidden="true"
                         />
-                        <span className="ml-3">9780201928</span>
+                        <span className="ml-3">7717392483</span>
                       </a>
                     </dd>
                     <dt>
