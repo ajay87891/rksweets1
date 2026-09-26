@@ -225,7 +225,7 @@ export default function ContactComponent() {
                       </a>
                     </dd>
                     <dd className=" text-purple-50">
-                      <a href="tel:+919877211141" className="flex text-base">
+                      <a href="tel:+919041908783" className="flex text-base">
                         <PhoneIcon
                           className="flex-shrink-0 w-6 h-6 text-purple-200"
                           aria-hidden="true"
@@ -234,7 +234,7 @@ export default function ContactComponent() {
                       </a>
                     </dd>
                     <dd className=" text-purple-50">
-                      <a href="tel:+919780201928" className="flex text-base">
+                      <a href="tel:+917717392483" className="flex text-base">
                         <PhoneIcon
                           className="flex-shrink-0 w-6 h-6 text-purple-200"
                           aria-hidden="true"
